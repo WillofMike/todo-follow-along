@@ -1,0 +1,24 @@
+<form class=""  method="POST" action="/todo/{{id}}?_method=PUT">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" name="title" value="{{title}}" class="form-control" placeholder="What is the Task">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea type="text" name="description" value="{{description}}" class="form-control" placeholder="What is the Task"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="priority">What is the Priority?</label>
+    <select name="priority" class="form-control" id="priority">
+      {{#select priority}}
+      <option value="1">Priority 1</option>
+      <option value="2">Priority 2</option>
+      <option value="3">Priority 3</option>
+      <option value="4">Priority 4</option>
+      <option value="5">Priority 5</option>
+      {{/select}}
+    </select>
+  </div>
+  <button type="submit" class="btn btn-danger">Update</button>
+  <a href="/todo/{{id}}" class="btn btn-primary">Nevermind</a>
+</form>

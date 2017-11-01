@@ -1,0 +1,15 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{title}}<span class="badge">{{priority}}</span></h3>
+  </div>
+  <div class="panel-body">
+    {{description}}
+  </div>
+  <div class="panel-footer">{{date}}</div>
+</div>
+
+<form class="" action="/todo/{{id}}?_method=DELETE" method="post">
+<a href="/todo"><button type="button" class="btn btn-success">Go back to todo's</button></a>
+<button class="btn btn-danger" type="submit" name="button">Delete this garbage</button>
+<a href="/todo/{{id}}/edit" class="btn btn-warning">Edit</a>
+</form>

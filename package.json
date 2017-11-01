@@ -1,0 +1,29 @@
+{
+  "name": "todo-follow-along",
+  "version": "1.0.0",
+  "description": "Todo list follow along with Dave",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillofMike/todo-follow-along.git"
+  },
+  "author": "Mike",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WillofMike/todo-follow-along/issues"
+  },
+  "homepage": "https://github.com/WillofMike/todo-follow-along#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "knex": "^0.13.0",
+    "method-override": "^2.3.10",
+    "path": "^0.12.7",
+    "pg": "^7.3.0"
+  }
+}
