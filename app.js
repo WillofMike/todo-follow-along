@@ -27,8 +27,6 @@ app.use(express.static('public'))
 app.use('/todo', todo)
 app.use('/', routes)
 
-
-
 app.listen(port, ()=> {
   console.log('listening on: ', port);
 })

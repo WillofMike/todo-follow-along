@@ -74,18 +74,18 @@ router.put('/:id', (req,res)=> {
   })
 })
 
-
-router.delete('/:id', (req,res)=> {
-  var id = req.params.id;
-  console.log(id);
-    if (typeof id != 'undefined') {
-      knex('todo')
-      .where('id', id)
-      .del()
-      .then(()=> {
-        res.redirect('/todo')
-    })
-  }
-})
+// Come back to this
+// router.delete('/:id', (req,res)=> {
+//   var id = req.params.id;
+//   console.log(id);
+//     if (typeof id != 'undefined') {
+//       knex('todo')
+//       .where('id', id)
+//       .del()
+//       .then(()=> {
+//         res.redirect('/todo')
+//     })
+//   }
+// })
 
 module.exports = router;
